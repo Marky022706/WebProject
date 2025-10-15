@@ -1,0 +1,405 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.navbar {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .icons a {
+    margin-left: 15px;
+}
+
+.navbar .icons img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* Home Page Specifics */
+.hero-section {
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-section .logo-container {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-section .logo-container img {
+    max-width: 80%; /* Adjust as needed */
+    height: auto;
+}
+
+.hero-section .content {
+    flex: 2;
+    padding-left: 40px;
+}
+
+.hero-section .content h1 {
+    color: #3b5998;
+    font-size: 32px;
+}
+
+.hero-section .content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-section .content .btn {
+    background-color: #3b5998;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hero-section .content .btn:hover {
+    background-color: #2d4373;
+}
+
+.about-section {
+    background-color: #3b5998;
+    color: white;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* About Us Page Specifics & General Content Section */
+.content-section {
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.content-section h1 {
+    color: #3b5998;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Events Page Specifics */
+.event-calendar-section {
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.event-calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.event-calendar-header h1 {
+    color: #3b5998;
+    font-size: 28px;
+}
+
+.event-calendar-header .filters select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.event-calendar-header .search-icon img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.event-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px; /* Adjust width as needed */
+}
+
+.event-card .date-box {
+    background-color: #3b5998;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+}
+
+.event-card .date-box .month {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.event-card .date-box .day {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.event-card .event-info {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.event-card .event-info .event-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3b5998;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.event-card .event-info .event-details {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 80px; /* Placeholder for content */
+}
+
+/* Contact Us Page Specifics */
+.contact-header {
+    background-color: #f0f2f5;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-header h1 {
+    color: #3b5998;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-info-section {
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-info-section .left-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info-section .left-content .placeholder-box {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.contact-info-section .left-content p {
+    font-size: 16px;
+    color: #555;
+    max-width: 300px;
+}
+
+.contact-info-section .right-content {
+    flex: 1;
+    text-align: right;
+}
+
+.contact-info-section .right-content .location {
+    font-size: 18px;
+    color: #3b5998;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.contact-info-section .right-content .location img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.contact-info-section .right-content .social-icons a {
+    margin-left: 15px;
+}
+
+.contact-info-section .right-content .social-icons img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Updates Page Specifics (Notifications) */
+.updates-section {
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.updates-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.updates-header h1 {
+    color: #3b5998;
+    font-size: 28px;
+}
+
+.updates-header .buttons button {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.updates-header .buttons button.delete {
+    background-color: #dc3545;
+}
+
+.updates-header .buttons button:hover {
+    opacity: 0.9;
+}
+
+.notification-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.notification-item .delete-icon img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.notification-item.read {
+    background-color: #e0e0e0; /* Style for read notifications */
+    color: #888;
+}
+
+/* Logout Page Specifics */
+.logout-message {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: absolute; /* Center it */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.logout-message h1 {
+    color: #3b5998;
+    margin-bottom: 20px;
+}
+.logout-message p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.logout-message a {
+    background-color: #3b5998;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+.logout-message a:hover {
+    background-color: #2d4373;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventEase - Event Calendar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/events.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-circle">
+                    <img src="logo/home-logo.png" alt="EventEase Logo" class="home-logo">
+                </div>
+                <div class="brand-name">EventEase</div>
+            </div>
+            
+            <nav id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="studentdashboard-home.html">Home</a></li>
+                    <li><a href="studentdashboard-about.html">About Us</a></li>
+                    <li><a href="studentdashboard-events.html" class="active">Events</a></li>
+                    <li><a href="studentdashboard-contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <i class="fas fa-bell notification-icon"></i>
+                <i class="fas fa-right-from-bracket logout-icon" id="logoutBtn"></i>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="header-section">
+            <h1 class="page-title">Event Calendar</h1>
+            <div class="controls">
+                <div class="dropdown">
+                    <select id="monthSelect">
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7" selected>August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <select id="daySelect"></select>
+                </div>
+                <button class="search-btn" id="searchBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Logout Confirmation Modal -->
+    <div id="logoutModal" class="modal">
+        <div class="modal-content">
+            <h2>Logout Confirmation</h2>
+            <p>Are you sure you want to log out?</p>
+            <div class="modal-buttons">
+                <button class="btn-cancel" id="cancelLogout">Cancel</button>
+                <button class="btn-confirm" id="confirmLogout">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Success Modal -->
+    <div id="logoutSuccessModal" class="modal">
+        <div class="modal-content">
+            <h2>Success</h2>
+            <p>You have successfully logged out.</p>
+            <div class="modal-buttons">
+                <button class="btn-confirm" id="okLogout">OK</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="events-grid" id="eventsGrid"></div>
+    </div>
+
+    <script src="script/events.js"></script>
+</body>
+</html>

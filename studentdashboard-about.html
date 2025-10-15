@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - EventEase</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-circle">
+                    <img src="logo/home-logo.png" alt="EventEase Logo" class="home-logo">
+                </div>
+                <div class="brand-name">EventEase</div>
+            </div>
+            
+            <nav id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="studentdashboard-home.html" >Home</a></li>
+                    <li><a href="studentdashboard-about.html" class="active">About Us</a></li>
+                    <li><a href="studentdashboard-events.html">Events</a></li>
+                    <li><a href="studentdashboard-contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <i class="fas fa-bell notification-icon"></i>
+                <i class="fas fa-right-from-bracket logout-icon" id="logoutBtn"></i>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="about-section">
+        <div class="white-box">
+            <div class="blue-box">
+                <h2>SRCB Campus Event Management</h2>
+                <p>
+                    a comprehensive campus event management system designed to make <br>school life
+                    more organized and engaging for students and faculty. We 
+                    understand the pain points
+                    of missing important events due to a lack of proper notifications and the frustration
+                    of dealing with non-mobile-friendly platforms.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Logout Confirmation Modal -->
+    <div id="logoutModal" class="modal">
+        <div class="modal-content">
+            <h2>Logout Confirmation</h2>
+            <p>Are you sure you want to log out?</p>
+            <div class="modal-buttons">
+                <button class="btn-cancel" id="cancelLogout">Cancel</button>
+                <button class="btn-confirm" id="confirmLogout">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Success Modal -->
+    <div id="logoutSuccessModal" class="modal">
+        <div class="modal-content">
+            <h2>Success</h2>
+            <p>You have successfully logged out.</p>
+            <div class="modal-buttons">
+                <button class="btn-confirm" id="okLogout">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/home.js"></script>
+</body>
+</html>

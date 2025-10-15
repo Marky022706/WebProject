@@ -1,0 +1,316 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D9D9D9;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #3861C0;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    object-fit: cover;
+}
+
+.brand-name {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+    
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.nav-links a.active {
+    border-bottom: 3px solid white;
+    animation: slideIn 0.3s ease-in-out forwards;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-icons i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.nav-icons i:hover {
+    opacity: 0.7;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+
+/* Main Section */
+main {
+    padding: 60px 20px;
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.home-logo {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    object-fit: cover;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.content-section h1 {
+    font-size: 42px;
+    color: #010307;
+    margin-bottom: 25px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.content-section p {
+    font-size: 20px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.cta-button {
+    background-color: #3861C0;
+    color: white;
+    padding: 18px 45px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(56,97,192,0.3);
+}
+
+.cta-button:hover {
+    background-color: #2B5BA6;
+    transform: translateY(-2px);
+}
+        /* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.modal h2 {
+    color: #3861C0;
+    margin-bottom: 15px;
+}
+
+
+.btn-cancel,
+.btn-confirm {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-cancel {
+    background-color: #ccc;
+    color: #000;
+}
+
+.btn-cancel:hover {
+    background-color: #bbb;
+}
+
+.btn-confirm {
+    background-color: #3861C0;
+    color: white;
+}
+
+.btn-confirm:hover {
+    background-color: #2f4fa0;
+}
+
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .page-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex: 1;
+        }
+
+        .dropdown {
+            position: relative;
+            flex: 1;
+            max-width: 220px;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px 40px 12px 20px;
+            border: 2px solid #d1d5db;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            color: #1a1a1a;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='%231a1a1a' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+        }
+
+        select:hover {
+            border-color: #4169E1;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #4169E1;
+            box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.1);
+        }
+
+        .search-btn {
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .search-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .search-btn svg {
+            width: 28px;
+            height: 28px;
+            stroke: #1a1a1a;
+            fill: none;
+            stroke-width: 2.5;
+        }
